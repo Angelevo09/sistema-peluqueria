@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
 });
 
 // Levantar el servidor
-const PORT = process.env.PORT || 19189;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
+    console.log(`Servidor API corriendo en el puerto ${PORT}`);
 });
