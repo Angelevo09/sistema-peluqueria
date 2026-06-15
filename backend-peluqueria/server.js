@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
 });
 
 // Levantar el servidor
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 19189;
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
