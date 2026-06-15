@@ -24,7 +24,7 @@ async function init() {
     // Cargar TODOS los datos antes de pintar
     await cargarServicios();
     await cargarEmpleados();
-    await cargarReservas(); // <-- NUEVO: Traemos las citas
+    await cargarReservas();
     
     render();
 }
@@ -32,7 +32,7 @@ async function init() {
 // 2a. Conexión con el Backend para traer empleados
 async function cargarEmpleados() {
     try {
-        const respuesta = await fetch(`${API_URL}/empleados`);
+        const respuesta = await fetch(`${API_URL}empleados`);
         estado.empleados = await respuesta.json();
     } catch (error) {
         console.error('Error cargando empleados:', error);
@@ -41,7 +41,7 @@ async function cargarEmpleados() {
 // 2b. Conexión con el Backend (Traer datos)
 async function cargarServicios() {
     try {
-        const respuesta = await fetch(`${API_URL}/servicios`);
+        const respuesta = await fetch(`${API_URL}servicios`);
         estado.servicios = await respuesta.json();
     } catch (error) {
         console.error('Error conectando al servidor:', error);
@@ -51,7 +51,7 @@ async function cargarServicios() {
 
 async function cargarReservas() {
     try {
-        const respuesta = await fetch(`${API_URL}/reservas`);
+        const respuesta = await fetch(`${API_URL}reservas`);
         estado.reservas = await respuesta.json();
     } catch (error) {
         console.error('Error cargando reservas:', error);
