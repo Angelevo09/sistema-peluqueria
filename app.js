@@ -1,6 +1,6 @@
 // Configuración global
 // Antes: const API_URL = 'http://localhost:3000/api';
-const API_URL = 'https://api-peluqueria.onrender.com/api';
+const API_URL = 'https://sistema-peluqueria.onrender.com/api';
 const appContainer = document.getElementById('app');
 
 // Estado de la aplicación
