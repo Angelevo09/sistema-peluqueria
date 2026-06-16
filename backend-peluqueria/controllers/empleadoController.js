@@ -22,4 +22,24 @@ const crearEmpleado = async (req, res) => {
     }
 };
 
-module.exports = { obtenerEmpleados, crearEmpleado };
+const actualizarEmpleado = async (req, res) => {
+    try {
+        const filas = await Empleado.actualizar(req.params.id, req.body);
+        if (filas === 0) return res.status(404).json({ error: 'Empleado no encontrado' });
+        res.json({ mensaje: 'Empleado actualizado' });
+    } catch (error) {
+        res.status(500).json({ error: 'Error al actualizar empleado', detalle: error.message });
+    }
+};
+
+const eliminarEmpleado = async (req, res) => {
+    try {
+        const filas = await Empleado.eliminar(req.params.id);
+        if (filas === 0) return res.status(404).json({ error: 'Empleado no encontrado' });
+        res.json({ mensaje: 'Empleado eliminado' });
+    } catch (error) {
+        res.status(500).json({ error: 'Error al eliminar empleado', detalle: error.message });
+    }
+};
+
+module.exports = { obtenerEmpleados, crearEmpleado, actualizarEmpleado, eliminarEmpleado };

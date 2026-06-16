@@ -7,5 +7,6 @@ router.get('/', servicioController.obtenerServicios);
 
 // Ruta para crear un nuevo servicio (POST)
 router.post('/', servicioController.crearServicio);
-
+router.put('/:id', servicioController.actualizarServicio);
+router.delete('/:id', servicioController.eliminarServicio);
 module.exports = router;
