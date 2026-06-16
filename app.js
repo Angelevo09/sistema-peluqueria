@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // ============================================
 // ICONOS SVG (reemplazan emojis)
 // ============================================
@@ -22,19 +22,14 @@ const ICONS = {
     email: `<svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>`,
     calendar: `<svg class="icon" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>`,
 };
-
-// ============================================
-// CONFIGURACIÓN GLOBAL
-// ============================================
-const API_URL = 'http://localhost:3000/api';
-=======
+// ========================================
 // Configuración global
 // Antes: const API_URL = 'http://localhost:3000/api';
 const API_URL = 'https://sistema-peluqueria.onrender.com/api';
->>>>>>> 2bf2bb0c77fec91efc7a164529bcf3041cd958e2
+//const API_URL = 'http://localhost:3000/api';
 const appContainer = document.getElementById('app');
 
-// ============================================
+// ========================================
 // ESTADO DE LA APLICACIÓN
 // ============================================
 const estado = {
