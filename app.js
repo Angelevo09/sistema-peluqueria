@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ============================================
 // ICONOS SVG (reemplazan emojis)
 // ============================================
@@ -26,6 +27,11 @@ const ICONS = {
 // CONFIGURACIÓN GLOBAL
 // ============================================
 const API_URL = 'http://localhost:3000/api';
+=======
+// Configuración global
+// Antes: const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://sistema-peluqueria.onrender.com/api';
+>>>>>>> 2bf2bb0c77fec91efc7a164529bcf3041cd958e2
 const appContainer = document.getElementById('app');
 
 // ============================================
